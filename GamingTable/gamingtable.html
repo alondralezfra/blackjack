@@ -1,4 +1,5 @@
-<!-- Create the boilerplate (!)
+<!-- Day 1:
+Create the boilerplate (!)
 title the page "Gaming Table"
 duplicate the header and footer from the landing page
 Create proper semantic tags
@@ -9,6 +10,17 @@ a list of cards, which are dealt in order (pick any cards :))
 a section with
 a description list of terms including "Hit", "Stand", "Split", and their defintions
 a h3 containing "Player's Options"-->
+
+
+<!-- Day 2:
+this is in the table.html:
+A "Player's Actions" section with an
+h3 saying "Player's Actions"
+buttons (should all be type:button to avoid submit behavior: plug this as an open house topic!)
+A disabled "Hit" button
+A "Stand" button
+A "Split" button-->
+
 
 <!DOCTYPE html>
 <html lang="en">
@@ -50,14 +62,11 @@ a h3 containing "Player's Options"-->
                     <dd>Split the hand into two separate hands.</dd>
                 </dl>
             </section>
+            <section>
+                <h3>Player's Actions</h3>
+                <button type="button" disabled>Hit</button>
+                <button type="button">Stand</button>
+                <button type="button">Split</button>
+            </section>
     </body>
 </html>
-
-
-<!--this is in the table.html:
-A "Player's Actions" section with an
-h3 saying "Player's Actions"
-buttons (should all be type:button to avoid submit behavior: plug this as an open house topic!)
-A disabled "Hit" button
-A "Stand" button
-A "Split" button-->
