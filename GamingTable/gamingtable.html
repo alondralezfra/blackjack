@@ -1,0 +1,63 @@
+<!-- Create the boilerplate (!)
+title the page "Gaming Table"
+duplicate the header and footer from the landing page
+Create proper semantic tags
+a main tag to represent table itself
+sections to represent an area that is the "Player's" cards, and an area for the "Dealer's" cards, each of which have
+an h2
+a list of cards, which are dealt in order (pick any cards :))
+a section with
+a description list of terms including "Hit", "Stand", "Split", and their defintions
+a h3 containing "Player's Options"-->
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Gaming Table</title>
+        <link rel="stylesheet" href="../styles.css">
+    </head>
+    <body>
+        <header>
+            <h1>Blackjack</h1>
+        </header>
+        <main>
+            <section>
+                <h2>Player's Cards</h2>
+                <ul>
+                    <li>2 of Hearts</li>
+                    <li>5 of Diamonds</li>
+                    <li>King of Spades</li>
+                </ul>
+            </section>
+            <section>
+                <h2>Dealer's Cards</h2>
+                <ul>
+                    <li>3 of Clubs</li>
+                    <li>7 of Hearts</li>
+                    <li>Queen of Diamonds</li>
+                </ul>
+            </section>
+            <section>
+                <h3>Player's Options</h3>
+                <dl>
+                    <dt>Hit</dt>
+                    <dd>Draw another card from the deck.</dd>
+                    <dt>Stand</dt>
+                    <dd>Keep the current hand.</dd>
+                    <dt>Split</dt>
+                    <dd>Split the hand into two separate hands.</dd>
+                </dl>
+            </section>
+    </body>
+</html>
+
+
+<!--this is in the table.html:
+A "Player's Actions" section with an
+h3 saying "Player's Actions"
+buttons (should all be type:button to avoid submit behavior: plug this as an open house topic!)
+A disabled "Hit" button
+A "Stand" button
+A "Split" button-->
