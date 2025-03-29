@@ -36,3 +36,13 @@ create a section with an id of callToAction with
 becomes 100% when the screen is 800px or smaller
 includes a paragraph containing the word Money
 includes a button that says Start Playing
+
+Day 5:
+sketch a wireframe for 2 minutes
+the header and footer needs to have a fixed position.
+the nav must be a flex container
+beyond this use flexbox or grid to create an awesome design. Have fun!
+Make a breakpoint somewhere between 500-900px. Work in common.css so it applies to both
+Make an element with a class attribute of disappearing that is only displayed above the breakpoint.
+Make an element with a class attribute of mobileFeature that is only displayed below the breakpoint.
+Remake the about page main content to use a grid, but you can choose your own wireframe design!
