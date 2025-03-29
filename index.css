@@ -1,12 +1,50 @@
+/* sketch a wireframe for 2 minutes
+the header and footer needs to have a fixed position.
+the nav must be a flex container
+beyond this use flexbox or grid to create an awesome design. Have fun!
+Make a breakpoint somewhere between 500-900px. Work in common.css so it applies to both
+Make an element with a class attribute of disappearing that is only displayed above the breakpoint.
+Make an element with a class attribute of mobileFeature that is only displayed below the breakpoint.
+Remake the about page main content to use a grid, but you can choose your own wireframe design!
+*/
+
 html {
     background-color:rgb(203, 175, 154);
     font-family: "Open Sans", sans-serif;
+}
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: rgb(116, 92, 92);
+    color: white;
+    padding: 10px 0;
+    text-align: center;
 }
 body {
     margin: 0;
     padding: 0;
     text-align: center;
 }
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgb(116, 92, 92);
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+}
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(116, 92, 92);
+    padding: 10px 0;
+}
+
 h1,
 li {
     color: rgb(61, 21, 21);
