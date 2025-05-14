@@ -1,4 +1,3 @@
-<!-- Remake the about page main content to use a grid, but you can choose your own wireframe design! -->
 
 <!DOCTYPE html>
 <html lang="en">
@@ -13,23 +12,32 @@
 
     <body>
         <header>
-            <h1>About Blackjack</h1>
-            <img src="blackjackLogo.webp" alt="Blackjack Logo" style="width:300px;height:300px;">
+            <h1>Blackjack</h1>
+            <img src="blackjackLogo.webp" alt="Blackjack Logo" style="width:75px;height:75px;">
         </header>
-        <main>
-            <section id="hero">
-                <h1> Blackjack History </h1>
-            </section>
+        <div class="grid-container">
+            <div class="grid-item mobileFeature">
+                <h1>Blackjack Mobile</h1>
+            </div>
+            <div class="grid-item">
+                <h1>About Blackjack</h1>
+            </div>
+            <main>
+                <section class="grid-item" id="hero">
+                    <h1> Blackjack History </h1>
+                    <p>Blackjack began in French casinos in the 1700's and expanded from there.</p>
+                </section>
 
-            <section id="whyUs">
-                <p>Why play Blackjack with us? We have the best service in the industry and stunning visuals.</p>
-            </section>
+                <section class="grid-item" id="whyUs">
+                    <p>Why play Blackjack with us? We have the best service in the industry and stunning visuals.</p>
+                </section>
 
-            <section id="callToAction">
-                <p>Win Money Today and enjoy the thrill!</p>
-                <button>Start Playing</button>
-        </main>
-
+                <section class="grid-item" id="callToAction">
+                    <p>Win Money Today and enjoy the thrill!</p>
+                    <button>Start Playing</button>
+                </section>
+            </main>
+        </div>
         <footer>
             <nav> <!-- navigation links -->
                 <ul> <!-- unordered list -->

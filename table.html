@@ -8,8 +8,12 @@
         <link rel="stylesheet" href="common.css">
     </head>
     <body>
-        <main>
-            <section>
+        <header>
+            <h1>Blackjack</h1>
+            <img src="blackjackLogo.webp" alt="Blackjack Logo" style="width:75px;height:75px;">
+        </header>
+        <main class="flex-container">
+            <section class="flex-item">
                 <h2>Player's Cards</h2>
                 <ul>
                     <li>2 of Hearts</li>
@@ -17,7 +21,7 @@
                     <li>King of Spades</li>
                 </ul>
             </section>
-            <section>
+            <section class="flex-item">
                 <h2>Dealer's Cards</h2>
                 <ul>
                     <li>3 of Clubs</li>
@@ -25,7 +29,7 @@
                     <li>Queen of Diamonds</li>
                 </ul>
             </section>
-            <section>
+            <section class="flex-item">
                 <h3>Player's Options</h3>
                 <dl>
                     <dt>Hit</dt>
@@ -36,7 +40,7 @@
                     <dd>Split the hand into two separate hands.</dd>
                 </dl>
             </section>
-            <section>
+            <section class="flex-item">
                 <h3>Player's Actions</h3>
                 <button type="button" disabled>Hit</button>
                 <button type="button">Stand</button>
