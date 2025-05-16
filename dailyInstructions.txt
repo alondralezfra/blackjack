@@ -46,3 +46,11 @@ Make a breakpoint somewhere between 500-900px. Work in common.css so it applies 
 Make an element with a class attribute of disappearing that is only displayed above the breakpoint.
 Make an element with a class attribute of mobileFeature that is only displayed below the breakpoint.
 Remake the about page main content to use a grid, but you can choose your own wireframe design!
+
+Day 6:
+Add the link from google fonts
+Use one font for headings, but use a different font for other elements (we will check a paragraph)
+Adjust your font sizes and add some margins
+    - Make sure h1 is 40px with a margin of 20px
+    - #copyright needs to be 10px
+Make it look good!

@@ -1,31 +1,52 @@
-
+* {
+    font-family: 'Josefin Sans', sans-serif;
+    color: rgb(61, 21, 21);
+}
+h1 {
+    font-size: 40px;
+    text-align: center;
+    margin-top: 20px;
+    padding-bottom: 8px;
+    font-family: 'Raleway', sans-serif;
+}
+h2 {
+    font-size: 1.5em;
+    text-align: center;
+    margin-top: 5px;
+    padding-bottom: 5px;
+    font-family: 'Raleway', sans-serif;
+}
+p {
+    font-size: 1em;
+    text-align: center;
+    padding-bottom: 5px;
+}
 html {
     background-color:rgb(203, 175, 154);
-    font-family: "Open Sans", sans-serif;
 }
 header {
     position: fixed;
+    height: 150px;
     top: 0;
     left: 0;
     right: 0;
     background-color: rgb(116, 92, 92);
-    color: white;
-    padding: 10px 0;
+    padding: 5px 0;
     text-align: center;
 }
 body {
     margin: 100px 0;
-    padding: 0;
+    padding-top: 100px;
+    padding-bottom: 50px;
     text-align: center;
 }
 footer {
     position: fixed;
+    height: 70px;
     bottom: 0;
     left: 0;
     right: 0;
     background-color: rgb(116, 92, 92);
-    color: white;
-    padding: 10px 0;
     text-align: center;
 }
 nav {
@@ -46,9 +67,15 @@ nav {
 .flex-item {
     background-color: #f1d4d4;
     border-radius: 10px;
-    padding: 20px;
+    border-color: black;
+    padding: 10px;
     text-align: center;
-    margin: 10px;
+}
+
+#copyright {
+    font-size: 10px;
+    color: white;
+    margin-bottom: 7px;
 }
 
 @media (max-width: 900px) {
