@@ -52,6 +52,9 @@ footer {
     background-color: rgb(116, 92, 92);
     text-align: center;
 }
+footer, footer p, footer nav, footer a, footer li {
+    font-family: 'Josefin Sans', sans-serif;
+}
 nav {
     display: flex;
     justify-content: center;

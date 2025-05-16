@@ -37,7 +37,9 @@ becomes 100% when the screen is 800px or smaller
 includes a paragraph containing the word Money
 includes a button that says Start Playing
 
+
 Day 5:
+
 sketch a wireframe for 2 minutes
 the header and footer needs to have a fixed position.
 the nav must be a flex container
@@ -47,7 +49,9 @@ Make an element with a class attribute of disappearing that is only displayed ab
 Make an element with a class attribute of mobileFeature that is only displayed below the breakpoint.
 Remake the about page main content to use a grid, but you can choose your own wireframe design!
 
+
 Day 6:
+
 Add the link from google fonts
 Use one font for headings, but use a different font for other elements (we will check a paragraph)
 Adjust your font sizes and add some margins
