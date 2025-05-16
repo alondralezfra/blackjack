@@ -1,8 +1,8 @@
 .grid-container {
     display: grid;
-    grid-template-rows: auto;
-    grid-auto-rows: 20vh;
     padding: 20px;
+    max-width: 100vw;
+    overflow-x: hidden
 }
 .grid-item {
     display: flex;
@@ -38,7 +38,6 @@
 }
 #callToAction button {
     padding: 20px 20px;
-    margin-bottom: 60px;
     font-size: 18px;
     background-color: rgb(108, 94, 67);
     color: white;
