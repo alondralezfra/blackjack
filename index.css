@@ -36,15 +36,7 @@
     background-color: #afab9c;
     border-radius: 10px;
 }
-#callToAction button {
-    padding: 20px 20px;
-    font-size: 18px;
-    background-color: rgb(108, 94, 67);
-    color: white;
-    border: none;
-    cursor: pointer;
-    border-radius: 5px;
-}
+
 @media (max-width: 800px) {
     #whyUs, #callToAction {
         width: 100%;
