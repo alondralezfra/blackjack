@@ -11,7 +11,13 @@ form {
 }
 
 label {
+    margin-top: 10px;
     margin-bottom: 10px;
     font-size: 1.2em;
 }
 
+#errorMessage {
+    color: red;
+    font-size: 0.9em;
+    margin-top: 10px;
+}
