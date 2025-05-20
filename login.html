@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Blackjack</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="reset.css">
+        <link rel="stylesheet" href="common.css">
+        <link rel="stylesheet" href="login.css"> <!-- Updated CSS file for login page -->
+    </head>
+
+    <body>
+        <header>
+            <h1>Blackjack</h1>
+            <img src="blackjackLogo.webp" alt="Blackjack Logo" style="width:75px;height:75px;">
+        </header>
+
+        <main>
+            <section id="loginSection">
+                <h2>Login to Your Account</h2>
+                <form id="loginForm">
+                    <label for="username">Username:</label>
+                    <input type="text" id="username" name="username" required>
+
+                    <label for="password">Password:</label>
+                    <input type="password" id="password" name="password" required>
+
+                    <button type="submit">Login</button>
+                </form>
+                <p id="errorMessage"></p> <!-- Placeholder for error messages -->
+            </section>
+        </main>
+
+        <footer>
+            <nav> <!-- navigation links -->
+                <ul> <!-- unordered list -->
+                    <li><a href="rules.html">Blackjack Rules</a></li> <!-- list item -->
+                    <li><a href="table.html">Gaming Table</a></li>
+                </ul>
+            </nav>
+            <p id="copyright">&copy; 2025 Blackjack Inc. All rights reserved.</p>
+        </footer>
+
+        <script src="login.js"></script> <!-- Link to the JavaScript file for login functionality -->
