@@ -43,11 +43,23 @@
                     <dd>Split the hand into two separate hands.</dd>
                 </dl>
             </section>
-            <section class="flex-item">
+            <section class="flex-item" id="playersActions">
                 <h2>Player's Actions</h2>
                 <button type="button" disabled>Hit</button>
                 <button type="button">Stand</button>
                 <button type="button">Split</button>
+            </section>
+            <section class="flex-item hidden" id="betting">
+                <h2>Betting</h2>
+                <form id="betForm">
+                    <span>$2022</span>
+                    <div>
+                        <input type="number" id="users-wager" min="1">
+                        <label for="users-wager">Wager</label>
+                        <div></div>
+                    </div>
+                    <button type="submit">Place Bet</button>
+                </form>
             </section>
             <footer>
             <nav>
@@ -59,5 +71,6 @@
             </nav>
             <p id="copyright">&copy; 2025 Blackjack Inc. All rights reserved.</p>
         </footer>
+        <script src="bankroll.js"></script>
     </body>
 </html>
