@@ -14,8 +14,6 @@
 // - Add a function (to the global scope) `timeToPlay()` that
 //   - Displays the #playersActions section by adding a class, and hides the #betting section
 
-const betForm = document.querySelector("#betForm");
-const betAmount = document.querySelector("#betAmount");
 
 let bankroll = 2022; // Initialize the player's bankroll to 2022
 
@@ -53,4 +51,17 @@ function timeToPlay() {
 
     const bettingSection = document.querySelector("#betting");
     bettingSection.classList.add("hidden"); // Hide the #betting section
+}
+
+function makeWager() {
+    const wagerInput = document.querySelector("#users-wager");
+    const wagerAmount = parseInt(wagerInput.value, 10);
+
+    if (Number.isInteger(wagerAmount) && wagerAmount > 0 && wagerAmount <= getBankroll()) {
+        console.log(`Wager amount: $${wagerAmount}`);
+        setBankroll(getBankroll() - wagerAmount); // Deduct the wager from the bankroll
+        timeToPlay(); // Call timeToPlay after making a wager
+    } else {
+        console.error("Invalid wager amount.");
+    }
 }

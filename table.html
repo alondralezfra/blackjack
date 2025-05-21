@@ -52,13 +52,13 @@
             <section class="flex-item hidden" id="betting">
                 <h2>Betting</h2>
                 <form id="betForm">
-                    <span>$2022</span>
+                    <span id="display-bankroll">$2022</span>
                     <div>
                         <input type="number" id="users-wager" min="1">
                         <label for="users-wager">Wager</label>
                         <div></div>
                     </div>
-                    <button type="submit">Place Bet</button>
+                    <button onclick="makeWager()">Bet</button>
                 </form>
             </section>
             <footer>

@@ -95,6 +95,10 @@ button:hover { /* Pseudo-class for hover effect */
     text-align: center;
 }
 
+.hidden {
+    display: none;
+}
+
 #copyright {
     font-size: 10px;
     color: white;
