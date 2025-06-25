@@ -1,9 +1,18 @@
 # blackjack
 Techwise Cohort 3 Course: Web Development Homeworks
 
-A new branch is created for each day throughout the course. Each branch is labeled
-as day-## and is an updated version of the previous day's branch version. Check out the 
-final day's branch for most recent version of website.
+This is Blackjack, a basic but fully functional MERN app using Node.js and Express for the backend, MondoDB and Mongoose for the database, and React for the frontend.
 
-This website was created with the purpose of learning how to use HTML. It explains what blackjack is,
-the rules of blackjack, and how to play. There is an about page, a gaming table, a rules page, and more, and all pages are hyperlinked together.
+Some of its features include:
+
+- the ability to store hands for the user
+- the ability to run games
+- the ability to display wins and losses
+- the ability to show cards
+- the ability to show game history
+
+All 4 levels of the homework instructions were completed.
+
+Some of the features which are buggy include
+
+You can run this application by
