@@ -7,7 +7,10 @@ function App() {
   const [player, setPlayer] = useState('');
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState('');
+  const [playerStats, setPlayerStats] = useState(null);
 
+
+  //  Fetch games when the component mounts
   useEffect(() => {
     fetchGames();
   }, []);
@@ -15,7 +18,7 @@ function App() {
   const fetchGames = async () => {
     try {
       setLoading(true);
-      const res = await axios.get('http://localhost:5000/api/games');
+      const res = await axios.get('http://localhost:5000/api/games'); // GET request to games route
       setGames(res.data);
     } catch (err) {
       setError('Failed to fetch games');
@@ -32,11 +35,12 @@ function App() {
         });
         setPlayer('');
         fetchGames();
-        alert(`Game started for ${res.data.player}. Status: ${res.data.status}`);
+        fetchPlayerStats();
+        alert(`Game started for ${res.data.player}\nHand: ${res.data.hand.join(', ')}\nStatus: ${res.data.status}`);
     } catch (err) {
         setError('Failed to create game');
     }
-};
+  };
 
   const deleteGame = async (id) => {
     try {
@@ -44,6 +48,16 @@ function App() {
       fetchGames();
     } catch (err) {
       setError('Failed to delete game');
+    }
+  };
+
+  const fetchPlayerStats = async () => {
+    if (!player) return;
+    try {
+        const res = await axios.get(`http://localhost:5000/api/players/${player}`);
+        setPlayerStats(res.data);
+    } catch (err) {
+        setError('Failed to fetch player stats');
     }
   };
 
@@ -73,6 +87,13 @@ function App() {
           </li>
         ))}
       </ul>
+      {playerStats && (
+        <div>
+        <h2>Player Stats:</h2>
+        <p>Wins: {playerStats.wins}</p>
+        <p>Losses: {playerStats.losses}</p>
+        </div>
+      )}
     </div>
   );
 }
