@@ -26,25 +26,14 @@ This app includes:
 All 4 levels in the assignment description have been completed.
 
 To run this app:
-
-Navigate to the backend folder by running "cd backend" and then run "npm install" to install dependencies.
-
-Make sure MongoDB is running.
-
-Start the backend by running npm run start.
-
-Navigate to the frontend folder by running "cd frontend" and then run "npm install" to install dependencies.
-
-Start the React app by running "npm start".
-
-
+- Navigate to the backend folder by running "cd backend" and then run "npm install" to install dependencies.
+- Make sure MongoDB is running.
+- Start the backend by running npm run start.
+- Navigate to the frontend folder by running "cd frontend" and then run "npm install" to install dependencies.
+- Start the React app by running "npm start".
 
 Some known issues include:
-
-Player stats must be manually created via API if player doesn't already exist
-
-Basic Blackjack logic only covers initial two-card hand (no hit/stand yet)
-
-No form validation for empty player names
-
-Basic frontend layout — future improvements planned for better design & structure
+- Player stats must be manually created via API if player doesn't already exist
+- Basic Blackjack logic only covers initial two-card hand (no hit/stand yet)
+- No form validation for empty player names
+- Basic frontend layout — future improvements planned for better design & structure
