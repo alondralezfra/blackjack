@@ -27,7 +27,7 @@ router.post('/', async (req, res) => {
         if (total === 21) status = 'won';
         else if (total > 21) status = 'lost';
         console.log('Hand:', hand, 'Total:', total); // Debugging line to check hand and total
-
+        
         const game = new Game({ player: req.body.player, status });
         const savedGame = await game.save();
 

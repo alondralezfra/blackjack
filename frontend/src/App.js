@@ -1,6 +1,8 @@
 import { useEffect, useState } from 'react';
 import axios from 'axios';
 import './App.css';
+import GamesList from './components/GamesList';
+import PlayerStats from './components/PlayerStats';
 
 function App() {
   const [games, setGames] = useState([]);
@@ -33,10 +35,10 @@ function App() {
         const res = await axios.post('http://localhost:5000/api/games', {
             player
         });
-        setPlayer('');
         fetchGames();
-        fetchPlayerStats();
+        fetchPlayerStats(res.data.player);
         alert(`Game started for ${res.data.player}\nHand: ${res.data.hand.join(', ')}\nStatus: ${res.data.status}`);
+        setPlayer('');
     } catch (err) {
         setError('Failed to create game');
     }
@@ -76,24 +78,8 @@ function App() {
       {loading && <p>Loading games...</p>}
       {error && <p style={{ color: 'red' }}>{error}</p>}
 
-      <h2>Games:</h2>
-      <ul>
-        {games.map((game) => (
-          <li key={game._id}>
-            {game.player} - {game.status} ({new Date(game.createdAt).toLocaleString()})
-            <button onClick={() => deleteGame(game._id)} style={{ marginLeft: '10px' }}>
-              Delete
-            </button>
-          </li>
-        ))}
-      </ul>
-      {playerStats && (
-        <div>
-        <h2>Player Stats:</h2>
-        <p>Wins: {playerStats.wins}</p>
-        <p>Losses: {playerStats.losses}</p>
-        </div>
-      )}
+      <GamesList games={games} deleteGame={deleteGame} />
+      {playerStats && <PlayerStats stats={playerStats} />}
     </div>
   );
 }
