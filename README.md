@@ -25,12 +25,17 @@ This app includes:
 
 All 4 levels in the assignment description have been completed.
 
-To run this app:
-- Navigate to the backend folder by running "cd backend" and then run "npm install" to install dependencies.
-- Make sure MongoDB is running.
-- Start the backend by running npm run start.
-- Navigate to the frontend folder by running "cd frontend" and then run "npm install" to install dependencies.
-- Start the React app by running "npm start".
+To run this app, you need:
+
+- Node Package Manager Installed
+- MongoDB Running
+- React Installed
+
+1. Navigate to the backend folder by running "cd backend" and then run "npm install" to install dependencies.
+2. Make sure MongoDB is running.
+3. Start the backend by running "npm run start".
+4. Navigate to the frontend folder by running "cd frontend" and then run "npm install" to install dependencies.
+5. Start the React app by running "npm start".
 
 Some known issues include:
 - Player stats must be manually created via API if player doesn't already exist
